@@ -4960,3 +4960,15 @@
   font-size: 18px;
   font-weight: bold;
 }
+
+
+
+.btn-about {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-about:hover {
+  background-color: #e90000; /* cor de fundo ao passar o mouse */
+  color: #ffffff; /* cor do texto ao passar o mouse */
+  border-color: #000000; /* cor da borda ao passar o mouse */
+}
