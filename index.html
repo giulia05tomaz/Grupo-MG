@@ -616,12 +616,36 @@
                <div class="col-xl-3 col-lg-3 col-md-4">
                   <div class="row justify-content-center">
                      <div class="col-md-12 d-flex justify-content-center">
-                        <a href="contato" class="btn f-right">Contato</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511944750639" class="btn f-right">Contato</a>
                      </div>
                   </div>
                </div>
             </div>
          </div>
+
+         <div class="formulario">  
+            <form id="contact" action="https://formsubmit.co/your@email.com" method="post">
+            
+              <h4>Entraremos em contato com você em algumas horas</h4>
+              <fieldset>
+                <input placeholder="Seu nome" type="text" name="Nome" tabindex="1" required autofocus>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Seu melhor email" type="Email" name="email" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Seu número de Telefone" type="tel" name="Telefone" tabindex="3" required>
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="Escreva sua mensagem aqui" type="text" name="Menssagem" tabindex="5" required></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+              </fieldset>
+            </form>
+           
+            
+          </div>
       </section>
       <div class="lgpd">
          <div class="lgpd-container">
@@ -630,7 +654,11 @@
                você concorda com estas condições. </div>
             <div class="lgpd-button-container"> <button class="lgpd-btn">OK</button> </div>
          </div>
+
+        
       </div>
+
+      
    </main>
 
    <script src="js/wow.min.js"></script>
