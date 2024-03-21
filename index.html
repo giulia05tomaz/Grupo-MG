@@ -606,22 +606,16 @@
 
       <section class="wantToWork-area w-padding2">
          <div class="container">
-            <div class="row align-items-center justify-content-between">
-               <div class="col-xl-8 col-lg-8 col-md-8">
-                  <div class="wantToWork-caption">
-                     <h2 class="wow pulse">Fale Conosco</h2>
-                     <p>Estamos sempre prontos para melhor atendê-los.</p>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-4">
-                  <div class="row justify-content-center">
-                     <div class="col-md-12 d-flex justify-content-center">
-                        <a href="https://api.whatsapp.com/send?phone=5511944750639" class="btn f-right">Contato</a>
+             <div class="row align-items-center justify-content-center"> <!-- Alterado para justify-content-center -->
+                 <div class="col-xl-8 col-lg-8 col-md-8">
+                     <div class="wantToWork-caption text-center"> <!-- Adicionado text-center aqui -->
+                         <h2 class="wow pulse" >Fale Conosco</h2> <!-- Removido align-text-center -->
+                         <p>Estamos sempre prontos para melhor atendê-los.</p>
                      </div>
-                  </div>
-               </div>
-            </div>
+                 </div>
+             </div>
          </div>
+  
 
          <div class="formulario">  
             <form id="contact" action="https://formsubmit.co/giulia05tomaz@gmail.com" method="post">
@@ -660,7 +654,32 @@
 
       
    </main>
-
+   <script>
+      // Função para redirecionar para a página de agradecimento após o envio do formulário
+      function redirecionarParaPaginaAgradecimento() {
+        window.location.href = "agradecimento.html"; // Substitua "pagina_de_agradecimento.html" pelo link da sua página de agradecimento
+      }
+    
+      // Adiciona um evento de escuta ao formulário para executar a função de redirecionamento após o envio
+      document.getElementById("contact").addEventListener("submit", function(event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
+        var form = this;
+        var xhr = new XMLHttpRequest();
+        xhr.open(form.method, form.action);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState !== XMLHttpRequest.DONE) return;
+          if (xhr.status === 200) {
+            form.reset(); // Limpa o formulário após o envio bem-sucedido
+            redirecionarParaPaginaAgradecimento(); // Redireciona para a página de agradecimento
+          } else {
+            alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente mais tarde.'); // Exibe uma mensagem de erro caso haja problemas com o envio
+          }
+        };
+        xhr.send(new FormData(form));
+      });
+    </script>
+    
    <script src="js/wow.min.js"></script>
    <script>
       new WOW().init();
