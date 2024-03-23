@@ -5059,3 +5059,43 @@ fieldset {
 	outline:0;
 	border:1px solid #999;
 }
+
+
+   /* Estilos para tornar a página responsiva */
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  /* Estilos para diferentes tamanhos de tela */
+  @media screen and (max-width: 600px) {
+    .container {
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
+
+ 
+ 
+ .bloco {
+    margin-bottom: 20px;
+ }
+ 
+ /* Estilos adicionais conforme necessário */
+ /* ... */
+ 
+ /* Estilos para diferentes tamanhos de tela */
+ @media screen and (max-width: 600px) {
+    .bloco {
+       margin-bottom: 10px;
+       width: 100%;
+    }
+
+      /* Estilos para tornar os itens responsivos */
+   .container-servicos {
+    display: flex;
+    flex-direction: column;
+ }
+ }
