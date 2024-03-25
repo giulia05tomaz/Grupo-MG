@@ -5090,12 +5090,18 @@ fieldset {
  @media screen and (max-width: 600px) {
     .bloco {
        margin-bottom: 10px;
-       width: 100%;
+       width: 90%;
     }
 
       /* Estilos para tornar os itens responsivos */
    .container-servicos {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .trusted-img{
+  margin-bottom: -50px;
  }
  }
