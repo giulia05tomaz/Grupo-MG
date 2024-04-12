@@ -3062,7 +3062,11 @@ a:hover {
 
     #estrutura{
         margin-bottom: 300%;
+        width: 105%;
+        margin-top: 300px;
     }
+
+    
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3074,6 +3078,8 @@ a:hover {
 
     #estrutura{
         margin-bottom: 300%;
+        width: 105%;
+        margin-top: 300px;
     }
 }
 
@@ -3086,6 +3092,8 @@ a:hover {
 
     #estrutura{
         margin-bottom: 300%;
+        width: 105%;
+        margin-top: 300px;
     }
 }
 
@@ -3098,6 +3106,8 @@ a:hover {
 
     #estrutura{
         margin-bottom: 300%;
+        width: 105%;
+        margin-top: 300px;
     }
 }
 
@@ -3600,6 +3610,7 @@ a:hover {
     .title-int h3 {
         font-size: 1.4rem
     }
+
 }
 
 .title-int h2::after,
