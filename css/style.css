@@ -3053,41 +3053,54 @@ a:hover {
     margin-bottom: 10%;
 }
 
-@media only screen and (min-width: 992px)and (max-width: 1199px) {
-    .mg-service .card-txt {
-        height: 700px
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .mg-service .card-txt,
+    .mg-service .card-txt2 {
+        height: 700px;
+        
     }
-    .mg-service .card-txt3 {
-        height: 700px
+
+    #estrutura{
+        margin-bottom: 300%;
     }
 }
 
-@media only screen and (min-width: 768px)and (max-width: 991px) {
-    .mg-service .card-txt {
-        height: auto
-    }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mg-service .card-txt,
     .mg-service .card-txt2 {
-        height: auto
+        height: auto;
+        
+    }
+
+    #estrutura{
+        margin-bottom: 300%;
     }
 }
 
-@media only screen and (min-width: 576px)and (max-width: 767px) {
-    .mg-service .card-txt {
-        height: auto
-    }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .mg-service .card-txt,
     .mg-service .card-txt2 {
-        height: auto
+        height: auto;
+        
+    }
+
+    #estrutura{
+        margin-bottom: 300%;
     }
 }
 
-@media(max-width: 575px) {
-    .mg-service .card-txt {
-        height: auto
-    }
+@media (max-width: 575px) {
+    .mg-service .card-txt,
     .mg-service .card-txt2 {
-        height: auto
+        height: auto;
+        
+    }
+
+    #estrutura{
+        margin-bottom: 300%;
     }
 }
+
 
 .mg-service .card-txt p {
     font-weight: 500;
@@ -3134,10 +3147,17 @@ a:hover {
     .mg-service .card-img {
         height: 700px
     }
+    .mg-service .card-img2 {
+        height: 700px
+    }
 }
 
 @media(max-width: 575px) {
     .mg-service .card-img {
+        height: 220px
+    }
+
+    .mg-service .card-img2 {
         height: 220px
     }
 }
