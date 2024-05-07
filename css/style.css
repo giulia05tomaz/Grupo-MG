@@ -3136,7 +3136,7 @@ a:hover {
 .mg-service .card-img {
     z-index: 1;
     position: relative;
-    background-image: url(../images/centro-servico.webp);
+    background-image: url(../images/empresa.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -4287,3 +4287,22 @@ a:hover {
   animation: slideleft 5000s linear infinite;
   cursor: grab;
 }
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d32e2e;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .botao:hover {
+    background-color: #c08a8a;
+  }
+
+  
