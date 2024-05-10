@@ -4185,23 +4185,9 @@ a:hover {
 
 
 
-.nav ul li {
-  display: inline-block;
-  padding: 5px;
-  
-  &:last-child { 
-    padding-right: 0;
-  }
-  
-  a {
-    display: block;
-    cursor: pointer;
-  }
-}
 
 .hero {
   height: 420px;
-  background: map-get($palette, primary);
   color: white;
   display: flex;
   justify-content: center;
@@ -4213,7 +4199,6 @@ a:hover {
 	font-family: inherit;
 	font-size: inherit;
 	color: white;
-	background: map-get($palette, secondary);
 	cursor: pointer;
 	padding: 25px 80px;
 	display: inline-block;
@@ -4237,9 +4222,7 @@ a:hover {
 	transition: all 0.3s;
 }
 
-.hero-button:hover {
-  box-shadow: 0 4px darken(map-get($palette, secondary), 10%);
-}
+
 
 .hero-button:active {
   box-shadow: 0 0 #ab3c3c;
@@ -4305,4 +4288,61 @@ a:hover {
     background-color: #c08a8a;
   }
 
-  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+    font-size: 22px;
+ 
+}
+
+th {
+    background-color: #c23c3c;
+       color: #fff;
+       font-size: 28px;
+}
+
+.tabela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: -15%;
+    text-align: center;
+    flex-direction: column;
+   
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela h1, p {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .tabela {
+        margin: 10px;
+    }
+
+    table {
+        font-size: 14px;
+        margin-bottom: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    table {
+        font-size: 12px;
+    }
+}
