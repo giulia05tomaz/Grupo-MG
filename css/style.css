@@ -4326,9 +4326,7 @@ table {
     margin-top: 20px;
 }
 
-.tabela h1, p {
-    text-align: center;
-}
+
 
 @media screen and (max-width: 768px) {
     .tabela {
