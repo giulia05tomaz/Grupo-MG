@@ -1,4 +1,18 @@
-﻿.boxed-btn {
+﻿body, html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.boxed-btn {
     background: #fff;
     color: #db3648 !important;
     display: inline-block;
@@ -3136,7 +3150,7 @@ a:hover {
 .mg-service .card-img {
     z-index: 1;
     position: relative;
-    background-image: url(../images/empresatoda.jpg);
+    background-image: url(../images/fabrica.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3150,9 +3164,7 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 570px;
-    width: 550px;
-    margin-left: -20%;
+
 }
 
 #estrutura{
