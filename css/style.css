@@ -3036,7 +3036,7 @@ a:hover {
 }
 
 .mg-service .card-txt {
-    background: #b50012;
+    background: #ffffff;
     padding: 50px;
     height: 555px;
     display: flex;
@@ -3130,11 +3130,11 @@ a:hover {
     font-weight: 500;
     margin-bottom: 15px;
     font-size: 15px;
-    color: #f5f5f5
+    color: #000000
 }
 
 .mg-service .card-txt h2 {
-    color: #fff;
+    color: #000000;
     font-weight: 700
 }
 
@@ -3144,7 +3144,7 @@ a:hover {
 }
 
 .mg-service .card-txt .btn-prod {
-    color: #fff
+    color: #000000
 }
 
 .mg-service .card-img {
@@ -3157,14 +3157,14 @@ a:hover {
     height: 555px
 }
 
-.mg-service .card-img2 {
+.mg-service .card-img {
     z-index: 1;
     position: relative;
-    background-image: url(../images/Estrutura.png);
+    background-image: url(../images/fabrica.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    height: 555px
 }
 
 #estrutura{
